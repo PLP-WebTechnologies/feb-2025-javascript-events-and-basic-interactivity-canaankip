@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Interactive Webpage</h1>
+  </header>
+
+  <main>
+    <!-- Section 1: Button with Click Event -->
+    <section>
+      <h2>Button Click Event</h2>
+      <button id="changeBtn">Click me!</button>
+    </section>
+
+    <!-- Section 2: Hover Effect -->
+    <section>
+      <h2>Hover Effect</h2>
+      <div id="hoverDiv">Hover over me!</div>
+    </section>
+
+    <!-- Section 3: Keypress Detection -->
+    <section>
+      <h2>Keypress Detection</h2>
+      <p>Press the "Enter" key to trigger an alert.</p>
+    </section>
+
+    <!-- Section 4: Image Gallery/Slideshow -->
+    <section>
+      <h2>Image Gallery</h2>
+      <div id="gallery">
+        <img src="Image1.jpg" id="currentImage" alt="Image 1">
+        <button id="nextBtn">Next</button>
+        <button id="prevBtn">Previous</button>
+      </div>
+    </section>
+
+    <!-- Section 5: Form Validation -->
+    <section>
+      <h2>Form Validation</h2>
+      <form id="myForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required placeholder="Enter your username">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Enter your email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required placeholder="Enter your password">
+        <br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Section 6: Tabs -->
+    <section>
+      <h2>Tab System</h2>
+      <div class="tabs">
+        <button class="tab" onclick="showContent(0)">Tab 1</button>
+        <button class="tab" onclick="showContent(1)">Tab 2</button>
+        <button class="tab" onclick="showContent(2)">Tab 3</button>
+      </div>
+      <div class="tab-content">
+        <div class="content" id="content0">Content 1</div>
+        <div class="content" id="content1">Content 2</div>
+        <div class="content" id="content2">Content 3</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 Interactive Webpage. All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
